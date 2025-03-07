@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(73, 66, 66);
+    border-bottom: 2px solid #000000;
+   
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(13, 81, 112),  teal, beige);
+}
+.box {
+    width: 35%;
+    border: 2px solid black;
+    height: 80vh;
+    text-align: center;
+    margin: 30px auto;
+    background-color: rgb(245, 245, 240);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.text {
+    padding: 20px;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: large;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+    padding-left: 25%;
+    padding-top: 20px;
+    
+}
+
+.class {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+
+.class p {
+    margin: 0;
+   
+}
+
+.btn{
+    font-weight: bolder;
+    width: 10%;
+    height: 7%;
+    color: white;
+    background: linear-gradient( to top, rgb(91, 91, 171),lightblue);
+    border: 1px solid rgb(48, 48, 127);
+    border-radius: 5px;
+    font-size: 17px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 60px;
+
+}
+input[type="radio"] {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+}
+input[type="radio"]:checked {
+    background-color: rgb(43, 184, 43);
+    border: 2px solid rgb(43, 184, 43);
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+}
