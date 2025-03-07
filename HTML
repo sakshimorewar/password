@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+       <h1>Choose a new password</h1>
+        <input type="password" placeholder="Enter Password" class="text">
+    <div class="content">   
+        <div class="class">
+            <input type="radio" class="lengthcheck" disabled>
+             <p>At least 8 characters long.</p>
+        </div>
+        <div class="class">
+            <input type="radio" class="upcheck" disabled>
+             <p> Contains uppercase letters.</p>
+        </div>
+         <div class="class">
+            <input type="radio" class="lowcheck" disabled>
+             <p>Contains lowercase letters.</p>
+         </div>
+         <div class="class">
+            <input type="radio" class="numcheck" disabled>
+             <p>Contains numbers.</p>
+        </div>
+        <div class="class">
+            <input type="radio" class="punchcheck" disabled>
+             <p>Contains punctuation.</p>
+         </div>
+   </div>
+        <button class="btn">Next</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
