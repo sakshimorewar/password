@@ -1,0 +1,72 @@
+document.querySelector(".text").addEventListener("input", function(){
+let password=this.value;
+let lengthcheck = document.querySelector(".lengthcheck");
+let upcheck = document.querySelector(".upcheck");
+let lowcheck = document.querySelector(".lowcheck");
+let numcheck = document.querySelector(".numcheck");
+let punchcheck = document.querySelector(".punchcheck");
+
+
+if (password.length < 8) {
+    this.style.border = "3px solid Red";
+    lengthcheck.checked=false;
+} else {
+     this.style.border = "3px solid  rgb(43, 184, 43)";
+     lengthcheck.checked=true;
+}
+
+let hasuppercase =false;
+for (let i=0; i < password.length; i++) {
+    let char =password[i];
+    if(char >= 'A' && char <='Z'){
+        hasuppercase =true;
+        break;
+    }
+}
+if (hasuppercase) {
+    upcheck.checked = true;
+}else {
+    upcheck.checked = false;
+}
+
+
+let haslowercase = false;
+for (let i=0; i < password.length; i++) {
+    let char = password[i];
+    if(char >='a'&& char <='z') {
+        haslowercase = true;
+        break;
+    }
+} 
+if (haslowercase) {
+    lowcheck.checked = true;
+}else {
+        lowcheck.checked = false;
+}
+
+let hasnumbercase = false;
+for (let i=0; i < password.length; i++) {
+    let char = password[i];
+    if(char >='0' && char <='9') {
+        hasnumbercase = true;
+        break;
+    }
+} 
+if (hasnumbercase) {
+    numcheck.checked = true;
+}else {
+        numcheck.checked = false;
+}
+
+let haspunchcase = false;
+let symbolchar = "!@#$%^&*()_+{}\|[];:',<>./?~`";
+for (let char of password) {
+if (symbolchar.includes(char)) {
+    haspunchcase = true;
+    break;
+}
+}
+punchcheck.checked = haspunchcase;
+});
+
+
